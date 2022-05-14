@@ -1,12 +1,10 @@
 import React from "react";
 import { Navigation } from "./Navigation";
-import { Productos } from "./Productos";
 
 export const Home = () => {
   return (
-
     <>
-      <Navigation></Navigation>
+      <Navigation/>
       <div className="container" >
 
         <div className="col-md-8">
@@ -19,7 +17,7 @@ export const Home = () => {
           </h5>
         </div>
       </div>
-      
+    
     </>
   );
 };

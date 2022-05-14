@@ -11,13 +11,12 @@ export const DetalleInstrumento = () => {
     const { id } = useParams();
     const [instrumento, setInstrumento] = useState<Instrumento>();
 
-     const getInstrumento = async () => {
+    const getInstrumento = async () => {
         let datos: Instrumento = await getInstrumentoXId(Number(id));
         console.log(datos);
         if (datos !== null) {
             setInstrumento(datos);
         }
-        
     }
 
     useEffect(() => {
@@ -26,7 +25,7 @@ export const DetalleInstrumento = () => {
 
     return (
         <>
-            <Navigation/>
+            <Navigation />
             <div className="container">
                 <div className="row">
                     <div className="col-lg-8">
@@ -41,7 +40,7 @@ export const DetalleInstrumento = () => {
                     </div>
                     <div className="col-lg-4 mt-3">
                         <p>{instrumento?.cantidadVendida} Vendidos</p>
-                        <h2>{instrumento?.instrumento}</h2>
+                        <h2>{instrumento?.nombre}</h2>
                         <h2 className="mt-5">${instrumento?.precio}</h2>
                         <h5>Marca : {instrumento?.marca}</h5>
                         <h5>Modelo : {instrumento?.modelo}</h5>

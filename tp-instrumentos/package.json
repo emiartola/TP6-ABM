@@ -15,11 +15,11 @@
     "react": "^18.0.0",
     "react-bootstrap": "^2.2.3",
     "react-dom": "^18.0.0",
+    "react-google-maps": "^9.4.5",
     "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.1",
     "typescript": "^4.6.3",
-    "web-vitals": "^2.1.4",
-    "react-google-maps": "*"
+    "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -48,6 +48,4 @@
   "devDependencies": {
     "@types/react-router-dom": "^5.3.3"
   }
-
-  
 }

@@ -5,6 +5,8 @@ import { Productos } from './components/Productos';
 import { DetalleInstrumento } from './components/DetalleInstrumento';
 import { DondeEstamos } from './components/DondeEstamos';
 import { Home } from './components/Home';
+import { GrillaInstrumentos } from './components/GrillaInstrumento';
+import { Formulario } from './components/Formulario';
 
 
 class App extends Component{
@@ -19,6 +21,9 @@ class App extends Component{
             </Route>
             <Route path="*" element={<Productos/>}/>
             <Route path="/DondeEstamos" element={<DondeEstamos/>}/>
+            <Route path="/Grilla" element={<GrillaInstrumentos/>}/>
+            <Route path="/instrumentosbuscar/:termino" element={< Productos/>}/>
+            <Route path="/formulario/:id" element={<Formulario />}/>
           </Routes>
     );
   }

@@ -5,6 +5,18 @@ const app = express();
 //   console.log("Connected to React");
 //   res.redirect("/");
 // });
+// app.get("/get", (req, res) => {
+//     console.log("Connected to React");
+//     res.redirect("/");
+//   });
+//   app.put("/put", (req, res) => {
+//     console.log("Connected to React");
+//     res.redirect("/");
+//   });
+//   app.delete("/delete", (req, res) => {
+//     console.log("Connected to React");
+//     res.redirect("/");
+//   });
 
 const PORT = process.env.PORT || 8080;
 

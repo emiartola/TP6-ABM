@@ -1,7 +1,7 @@
 
 export default class Instrumento {
     id: number = 0;
-    instrumento: string = "";
+    nombre: string = "";
     marca: string = "";
     modelo: string = "";
     imagen: string = "";
